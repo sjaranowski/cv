@@ -1,0 +1,13 @@
+** For recruiters: Please don't contact me with job offers. **
+
+My main area of intrests and work experience include distributed systems design and development, big data analysis, operating systems design and development and embedded software.
+
+Hard skills:
+- strong C++ developer,
+- large-scale data analysis using MapReduce pipelines,
+- basic skills in Machine Learning and Android Applications development.
+
+Soft skills:
+- quick learner,
+- experienced interviewer (20+ technical interviews conducted),
+- trained in technical writing.

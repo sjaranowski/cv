@@ -1,0 +1,139 @@
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%
+% Modded by:
+%  - ntrp (nitropowered@gmail.com)
+%  - Szymon Jaranowski (szymon.jaranowski@gmail.com)
+
+%\documentclass[11pt,a4paper,colorlinks,linkcolor=true]{moderncv}
+\documentclass[a4paper,colorlinks,linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{moderncv}
+
+% optional argument are 'blue' (default), 'orange', 'red', 'green',
+% 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[lightblue]{classic}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,polish]{babel}
+
+%\usepackage[scale=0.85,footskip=80pt]{geometry}
+\usepackage[scale=0.85,top=25mm,bottom=25mm]{geometry}
+\recomputelengths
+
+%\fancyfoot[LE,RO]{\thepage} % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\parbox{0.88\linewidth}{
+    \footnotesize{\color{color2} Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych
+      do realizacji procesu rekrutacji (zgodnie z~Ustawą z~dnia 29.08.1997 roku
+      o~Ochronie Danych Osobowych; tekst jednolity: Dz.U.z~2014r., poz.1182 ze zm.).}
+    }
+} % other info in "inner" position of footer line
+\fancyfoot[RE,LO]{
+    \footnotesize{\color{color2} Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych
+      do realizacji procesu rekrutacji (zgodnie z~Ustawą z~dnia 29.08.1997 roku
+      o~Ochronie Danych Osobowych; tekst jednolity: Dz.U.z~2014r., poz.1182 ze~zm.).}
+    }
+
+\setlength{\makecvheadnamewidth}{12cm}
+\renewcommand*{\namefont}{\fontsize{29}{32}\mdseries\upshape}
+
+\firstname{Szymon}
+\familyname{Jaranowski}
+\title{Curriculum Vitæ}
+
+\address{Św. Bonifacego 71/149}{02-936, Warsaw, Poland}
+\mobile{(+48) 693 435 469}
+\email{szymon.jaranowski@gmail.com}
+\homepage{linkedin.com/in/sjaranowski}
+\photo[66pt]{photos/myself-color-small.png}
+\extrainfo{* Born 26\textsuperscript{th} September 1986}
+\nopagenumbers
+
+\begin{document}
+\maketitle
+
+\vspace{-6.5ex}
+
+\section{Experience}
+
+\cventry{Since 2021.5}{Java Developer}{\href{https://www.tink.com/}{Tink}}{}{}{
+  \begin{itemize}
+  \item Stack: Java 8, Bazel, Protocol Buffers, REST, Docker, Kubernetes, AWS, micro-services
+  \item Practices: Code Review (GitHub based), CI/CD, testing: JUnit, AssertJ, Mockito, WireMock
+  \item Tools: IntelliJ Idea, Bazel, Git, Buildkite, JIRA, Confluence
+  \end{itemize}
+}
+
+\cventry{\small2019.1-2021.5}{Java Developer}{\href{https://www.4finance.com/}{4Finance}}{}{}{
+  Development and support of backend for personal loan companies (in Poland: \href{https://www.vivus.pl}{Vivus} and \href{https://www.zaplo.pl}{Zaplo}) in a~SCRUM team
+  \begin{itemize}
+  \item Stack: Java 11, Groovy, SQL (Postgres), Spring Boot, Hibernate, Vavr, Quartz, ActiveMQ, RabbitMQ, Camel, REST, Docker, Kubernetes, micro-services
+  \item Practices: Code Review (BitBucket based), CI, testing: Spock, JUnit, AssertJ, Mockito, WireMock
+  \item Tools: IntelliJ Idea, Gradle, Git, Jenkins, JIRA, Confluence
+  \end{itemize}
+}
+
+\cventry{\scriptsize2018.5-2018.12}{Kotlin Developer}{\href{http://play.pl/}{Play}}{}{}{
+  Development and support of \href{https://next.play.pl/}{Play Next} CRM back-end
+  (acquired during a~takeover of Folx telecommunications service provider startup) in a~SCRUM team
+  \begin{itemize}
+  \item Stack:  Kotlin, SQL (Postgres), Spring Boot, REST, Swagger, Kotlin Exposed, Quartz, Docker, AWS, micro-services
+  \item Practices: Code Review (GitLab based), CI, testing: TestNG, JUnit, Mockito
+  \item Tools: IntelliJ Idea, Gradle, Git, GitLab CI, JIRA, Confluence
+  \end{itemize}
+}
+
+\cventry{\small2016.4-2018.5}{Java Developer}{\href{https://www.ericsson.com}{Ericsson}}{}{}{
+  Development and support (DevOps) of an automation system (MATE) in a~SCRUM team
+  \begin{itemize}
+  \item Stack: Java 8, Groovy, Python (scripting), Quartz, CORBA, REST, JMS (SDIS), Spring Boot, Netflix Stack, testing: Spock, JUnit, Mockito, PowerMock, AssertJ Swing, Selenium
+  \item Practices: Code Review (+1/+2 Gerrit-based), TDD, CI, semi-automatic deployments
+  \item Tools: IntelliJ Idea, Gradle, Guava, Git, Gerrit, Docker, Jenkins, Ansible, JIRA, Confluence, Artifactory, Jacoco, Sonar, Checkstyle
+  \item Experience with maintaining and modernization of legacy applications; troubleshooting multi-threaded applications
+  \end{itemize}
+}
+
+\cventry{\scriptsize2013.10-2016.3}{Java Developer}{University of Warsaw}{\href{http://icm.edu.pl}{ICM}}{Laboratory of Visual Analysis}{
+Development of \href{https://visnow.org}{VisNow}, an \href{https://gitlab.com/ICM-VisLab/VisNow}{open-source}, generic visualization framework written in Java
+  \begin{itemize}
+  \item Stack: Java 8, JCuda, CUDA C, testing: JUnit, tools: NetBeans
+  \item GPGPU implementations of denoising algorithms used in medical imaging
+  \item Supporting systems administration and hardware maintenance
+  \end{itemize}
+}
+\cventry{\small2012.2-2013.9}{High-Performance Computing (HPC) Specialist}{University of Warsaw}{\href{http://icm.edu.pl}{ICM}}{Centre for the Computational Science}{
+  \begin{itemize}
+  \item Parallel environment setups, shell scripting (bash, C Shell, Python), software maintenance, trainings
+  \item Code optimization for various architectures, including non-x86, ex. IBM POWER (PowerPC)
+  \item Large-scale tuning of meteorological models, ex. \href{http://www.wrf-model.org}{WRF}
+  \item Experience with a~broad variety of *nix systems
+  \end{itemize}
+}
+
+%\section{Computer Skills}
+%\cvcomputer{Good}{Java SE}{Scripting}{Bash, C Shell, Python, Groovy}
+%\cvcomputer{Basic}{Groovy, Docker, Kotlin, Spring}{Platforms}{Broad variety of *nix}
+%\cvcomputer{IDE}{IntelliJ Idea, NetBeans}{VCS}{Git (with Gerrit), Subversion}
+
+\section{Education}
+\cventry{2009-2011}{Master's Degree in Applied Mathematics}{University of Warsaw}{Poland}{}{
+  {\bfseries Final grade 4.5 (\emph{good plus})}. Numerical analysis
+}
+\cventry{2007-2009}{Bachelor's Degree in Mathematics}{University of Warsaw}{Poland}{}{
+  {\bfseries Final grade 5 (\emph{very good})}. Non-statistical data analysis/data-mining
+}
+
+%\section{Hobbies}
+%I'm keeping eye on new technologies and~enjoy programming competitions.
+%
+%\subsection{Programming Competitions}
+%\cvline{Since 2016}{{\bfseries HackerRank} (various contests) as \emph{sjaranowski}}
+%\cvline{Since 2011}{{\bfseries Potyczki Algorytmiczne} (open national programming contest) as \emph{sjar}, \emph{sjaranowski}}
+%%\cvline{Since 2007}{{\bfseries TopCoder} (Algorithm, Marathon Match contests) as \emph{sjar}}
+
+\end{document}
